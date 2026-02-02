@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Manipulasi Element</title>
+    <style>
+      .bg-red {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>title</h1>
+      <div id="container">
+        <h1>title</h1>
+        <p>ini text</p>
+      </div>
+    </div>
+    <p id="paragraph">ini text</p>
+    <ul>
+      <li>ini item1</li>
+      <li>ini item 2</li>
+      <li>ini item 3</li>
+      <li>ini item4</li>
+    </ul>
+    <script>
+      // //mengubah konten
+      // const paragraph = document.getElementById("paragraph");
+      // paragraph.textcontent = "ini new paragraph";
+      // //2 element.innerHTmL
+      // paragraph.innerHTML = "ini paragraph dengan innerHTMl";
+      // const container = document.getElementById("container");
+      // console.log(container.innerHTML);
+      // container.innerHTML =
+      //   "<h1> ini berubah menjadi content dengan tagname baru</h1>";
+      const paragraph = document.getElementById("paragraph");
+      // console.log(paragraph)
+      paragraph.setAttribute("class", "bg-red"); //manipulasi attribute
+
+      // manipulasi style
+      const li = document.querySelectorAll("li");
+      li[2].style.color = "blue";
+      console.log(li);
+    </script>
+  </body>
+</html>

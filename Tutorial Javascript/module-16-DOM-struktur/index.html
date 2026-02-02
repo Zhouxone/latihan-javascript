@@ -1,0 +1,24 @@
+1<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="" rel="stylesheet" />
+    <title>DOM Struktur</title>
+  </head>
+  <body>
+    <h1>Hello, World !</h1>
+    <p>ini contoh struktur dom</p>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+    <script>
+      console.log(document.querySelectorAll("li"));
+      let list = document.querySelectorAll("li");
+      list[0].style.color = "red";
+    </script>
+  </body>
+</html>

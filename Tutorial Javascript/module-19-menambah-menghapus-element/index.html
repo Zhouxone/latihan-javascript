@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoM menambah dan menghapus element</title>
+  </head>
+  <body>
+    <h1 id="title">DOM menambah dan menghapus elemnt</h1>
+    <ul id="list">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li id="item-2">item 3</li>
+      <li>item 4</li>
+    </ul>
+    <script>
+      const newDiv = document.createElement("div");
+      newDiv.textContent = "ini div yang dibuat dari script";
+      //   document.body.appendChild(newDiv);
+      const title = document.getElementById("title");
+      document.body.insertBefore(newDiv, title);
+
+      const newLi = document.createElement("li");
+      newLi.textContent = "item dari script";
+      const parents = document.getElementById("list");
+      parents.appendChild(newLi);
+      document.body.removeChild(title);
+    </script>
+  </body>
+</html>

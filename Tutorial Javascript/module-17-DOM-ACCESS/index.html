@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Acess</title>
+  </head>
+  <body>
+    <h1 id="title">hello, worlds</h1>
+    <p id="text">ini dalah contoh class</p>
+    <ul>
+      <li>itemm 1</li>
+      <li>itemm 2</li>
+      <li>itemm 3</li>
+    </ul>
+    <script>
+      const title = document.getElementById("title");
+      console.log(title);
+      const text = document.getElementsByClassName("text");
+      console.log(text);
+      const el = document.getElementsByTagName("h1");
+      console.log(el);
+      const element = document.querySelectorAll("li.text");
+      console.log(element);
+    </script>
+  </body>
+</html>
